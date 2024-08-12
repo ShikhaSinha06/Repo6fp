@@ -26,7 +26,7 @@
         <li><button id="addToCartButton" type="button">Add to Cart</button></li>
         <li><button id="checkoutButton" type="button">Check Out</button></li>
         <li><button id="purchaseButton" type="button">Purchase</button></li>
-        <li><button id="subcribeButton" type="button">Subscribe</button></li>
+        <li><button id="subcribeButton" type="button">Custom_Event_1</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
     </ul>
     </div>
@@ -45,8 +45,8 @@ cbq('track', 'Purchase', {
 currency: 'USD',
 });
 }, false);
-document.getElementById('subcribeButton').addEventListener('click', function() {
-  cbq('track', 'Subscribe');
+document.getElementById('Custom_Event_1Button').addEventListener('click', function() {
+  cbq('track', 'Custom_Event_1');
 }, false);
 document.getElementById('registrationButton').addEventListener('click', function() {
   cbq('track', 'CompleteRegistration');
